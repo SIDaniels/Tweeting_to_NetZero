@@ -51,12 +51,12 @@ Sentiment analysis models included text with punctuation/upper cases but exclude
 Tweets were binned into primary topic categories based on their highest LSA value for each topic. These primary topics categories were plotted against the labeled sentiment to determine which topics had overall positive versus negative (or neutral) tweets. In general, the topics referring to UK politics had a greater proportion of negative tweets as compared to topics broadly on the carbon market, renewable energy sources, or tokenized carbon credits issued on the blockchain. Overall, recommendations to Salesforce are to emphasize language surrounding topics with a more seemingly positive slant, while minimizing mention of European (particularly UK) activities around Net Zero. Salesforce may consider experimentally migrating some carbon credits to the blockchain or integrating crypto carbon credits into their marketplace, as there is great enthusiasm on Twitter around tokenization of carbon credits. Conversely, Salesforce would be wise not to campaign around convenings or events with world leaders (i.e., World Cup, United Nations Climate Change Conference Conference, World Economic Forum) as these tweets were found to have relatively negative sentiment scores. 
 
 ## Tools
-Data Collection - Tweepy library
-Preprocessing Tweets - re, nltk, langdetect libraries
-Data Manipulation - numpy and pandas libraries
-Tokenizing - CountVectorizer and TFIDFVectorizer from sklearn
-Topic Modeling - TruncatedSVD, KMeans from sklearn library,
+- Data Collection - Tweepy library
+- Preprocessing Tweets - re, nltk, langdetect libraries
+- Data Manipulation - numpy and pandas libraries
+- Tokenizing - CountVectorizer and TFIDFVectorizer from sklearn
+- Topic Modeling - TruncatedSVD, KMeans from sklearn library,
 			 CorExTopics and Spacy libraries
-Sentiment Analysis - Vader and TextBlob, ScatterText libraries
-Data Visualization - Matplotlib, plotly and Seaborn libraries
+- Sentiment Analysis - Vader and TextBlob, ScatterText libraries
+- Data Visualization - Matplotlib, plotly and Seaborn libraries
 
