@@ -1,4 +1,4 @@
-# Tweeting_to_NetZero
+# Tweeting to NetZero
 
 ## Abstract
 The clock is ticking to reduce greenhouse gas emissions in order to stave off the worst outcomes of climate change. With expectations of greater regulations and costs for emitting GHGs, companies worldwide are under pressure to set “net zero” target dates and are scrambling to minimize their GHG emissions to achieve these goals in the coming decades. Net zero is loosely defined maintaining a balance of no emissions, thereby either reducing or compensating for any GHG emissions released into the atmosphere. As carbon dioxide is a main contributor to GHG and global warming, emissions are generally estimated in carbon equivalents. For those companies that cannot remove all GHG from their operations, the voluntary carbon market allows carbon emissions from polluting companies to be “offset” by funding projects that reduce or remove an equivalent quantity of carbon from the atmosphere elsewhere through other means (e.g., reforestation, proper waste disposal, carbon capture). However, the majority of current transactions for the sale and purchase of these carbon offsetting projects is “over-the-counter.” This is inefficient, costly, and unreliable for a market that’s exploded to more than $1 billion in value. 
@@ -32,23 +32,29 @@ Topic modeling using LSA was conducted on the resulting matrices as well as K-me
 
 The LSA produced the following topics (with K-means and CorEx generally validating with similar topic compositions):
 #### General Keyterm Quality Control topics
-carbon, zero, net, footprint, amp, climate, energy, emissions, neutral, credits, just, people
+![alt text](./Key_theme_topics.png)
 #### UK Politics topics
-zero, net, uk, boris, energy, immigration, government, amp, party, achieve, policies, reach
-#### More (likely UK-related) Politics topics
-climate, change, action, emissions, people, crisis, global, just, world, need, uk, real
+![alt text](./UK_Politics_Topics.png)
 #### Tokenizing (ie., Cryptos) Carbon Credits topics
-amp, neutral, carbon, credits, offset, credit, market, join, impt, tax, emissions, program
-#### More Tokenizing (ie., Cryptos) Carbon Credits topics
-amp, footprint, energy, reduce, join, program, check, investing, impactful, token, presale, hey
+![alt text](./Tokenizing_Carbon_Credit_Topics.png)
 #### Renewable Energy
-energy, green, renewable, solar, reduce, use, neutral, gas, emissions, climate, new, power
+![alt text](./Renewable_Energy_Topics.png)
 
 ### Sentiment Analysis
-Sentiment analysis models included text with punctuation/upper cases but excluded urls, hashtags, mentions and linebreaks. Tweets were assigned with sentiment compound scores and overall sentiment labels (positive, neutral, or negative), accordingly.  The majority of tweets were labeled as either neutral (0.0 compound score) or positive (>0.0 compound score). The observed subjectivity vs. polarity of tweets confirmed this finding, with tweets trending towards lower subjectivity overall, and positive polarity as subjectivity increased. 
+Sentiment analysis models included text with punctuation/upper cases but excluded urls, hashtags, mentions and linebreaks. Tweets were assigned with sentiment compound scores and overall sentiment labels (positive, neutral, or negative), accordingly.  The majority of tweets were labeled as either neutral (0.0 compound score) or positive (>0.0 compound score). The observed subjectivity vs. polarity of tweets confirmed this finding, with tweets trending towards lower subjectivity overall, and positive polarity as subjectivity increased.  
 
 ### Topic Modeling vs. Sentiment Analysis
-Tweets were binned into primary topic categories based on their highest LSA value for each topic. These primary topics categories were plotted against the labeled sentiment to determine which topics had overall positive versus negative (or neutral) tweets. In general, the topics referring to UK politics had a greater proportion of negative tweets as compared to topics broadly on the carbon market, renewable energy sources, or tokenized carbon credits issued on the blockchain. Overall, recommendations for social media campaigns on carbon marketplaces are to emphasize language surrounding topics with a more seemingly positive slant, while minimizing mention of European (particularly UK) activities around Net Zero. Marketplace strategists may consider experimentally migrating some carbon credits to the blockchain or integrating crypto carbon credits into their marketplace, as there is great enthusiasm on Twitter around tokenization of carbon credits. Conversely, it would be wise not to campaign around convenings or events with world leaders (i.e., World Cup, United Nations Climate Change Conference Conference, World Economic Forum) as these tweets were found to have relatively negative sentiment scores. 
+Tweets were binned into primary topic categories based on their highest LSA value for each topic. These primary topics categories were plotted against the labeled sentiment to determine which topics had overall positive versus negative (or neutral) tweets. In general, the topics referring to UK politics had a greater proportion of negative tweets as compared to topics broadly on the carbon market, renewable energy sources, or tokenized carbon credits issued on the blockchain. 
+
+![alt text](./counts_sentiment_topic.png)
+![alt text](./percent_sentiment_topic.png)
+
+Overall, recommendations for social media campaigns on carbon marketplaces are to emphasize language surrounding topics with a more seemingly positive slant, while minimizing mention of European (particularly UK) activities around Net Zero. Marketplace strategists may consider experimentally migrating some carbon credits to the blockchain or integrating crypto carbon credits into their marketplace, as there is great enthusiasm on Twitter around tokenization of carbon credits. Conversely, it would be wise not to campaign around convenings or events with world leaders (i.e., World Cup, United Nations Climate Change Conference Conference, World Economic Forum) as these tweets were found to have relatively negative sentiment scores. 
+
+## Conclusion
+- Could be challenging to launch the Net Zero Marketplace Platform in UK 
+- Engagement with moving carbon credits accounting to blockchain (i.e., tokenization) may be advantageous 
+- Heed caution for particularly controversial topics (i.e., World Economic Forum climate discussion, Net Zero at World Cup, upcoming COP27)
 
 ## Tools
 - Data Collection - Tweepy library
