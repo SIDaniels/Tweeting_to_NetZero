@@ -31,13 +31,13 @@ Texts were cleaned using regularized expressions to remove hashtags, mentions, l
 Topic modeling using LSA was conducted on the resulting matrices as well as K-means and CorEx. Spacy was used for relevant named entity recognition that may not have been thoroughly captured by the alternative topic modeling methods. 
 
 The LSA produced the following topics (with K-means and CorEx generally validating with similar topic compositions):
-#### General Keyterm Quality Control topics
+General Keyterm Quality Control topics  
 ![alt text](./Key_theme_topics.png)
-#### UK Politics topics
+UK Politics topics  
 ![alt text](./UK_Politics_Topics.png)
-#### Tokenizing (ie., Cryptos) Carbon Credits topics
+Tokenizing (ie., Cryptos) Carbon Credits topics  
 ![alt text](./Tokenizing_Carbon_Credit_Topics.png)
-#### Renewable Energy
+Renewable Energy  
 ![alt text](./Renewable_Energy_Topics.png)
 
 ### Sentiment Analysis
