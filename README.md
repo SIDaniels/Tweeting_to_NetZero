@@ -31,14 +31,11 @@ Texts were cleaned using regularized expressions to remove hashtags, mentions, l
 Topic modeling using LSA was conducted on the resulting matrices as well as K-means and CorEx. Spacy was used for relevant named entity recognition that may not have been thoroughly captured by the alternative topic modeling methods. 
 
 The LSA produced the following topics (with K-means and CorEx generally validating with similar topic compositions):
-General Keyterm Quality Control topics  
-![alt text](./Key_theme_topics.png)
-UK Politics topics  
-![alt text](./UK_Politics_Topics.png)
-Tokenizing (ie., Cryptos) Carbon Credits topics  
-![alt text](./Tokenizing_Carbon_Credit_Topics.png)
-Renewable Energy  
-![alt text](./Renewable_Energy_Topics.png)
+#### General Keyterm Quality Control topics &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; UK Politics topics
+![alt text](./Key_theme_topics.png)&emsp;&emsp;&emsp;&emsp;![alt text](./UK_Politics_Topics.png)
+
+#### Tokenizing (ie., Cryptos) Carbon Credits topics &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Renewable Energy
+![alt text](./Tokenizing_Carbon_Credit_Topics.png)&emsp;&emsp;&emsp;&emsp;![alt text](./Renewable_Energy_Topics.png)
 
 ### Sentiment Analysis
 Sentiment analysis models included text with punctuation/upper cases but excluded urls, hashtags, mentions and linebreaks. Tweets were assigned with sentiment compound scores and overall sentiment labels (positive, neutral, or negative), accordingly.  The majority of tweets were labeled as either neutral (0.0 compound score) or positive (>0.0 compound score). The observed subjectivity vs. polarity of tweets confirmed this finding, with tweets trending towards lower subjectivity overall, and positive polarity as subjectivity increased.  
